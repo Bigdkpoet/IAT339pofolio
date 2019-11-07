@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>P01 Style Guide</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+
+</head>
+
+<body>
+
+  	<div class="toplogo">
+
+  		<div class="box">
+
+  			<div class="box-item-image">
+  				<img src="img/logo.jpg" alt="CD PROJEKT RED">
+  			</div>
+
+  			<div class="box-item-text">
+  				<h1>CD projeckt RED</h1>
+  				<h2>Style Guide </h2>
+  				<br>
+  			</div>
+  		</div>
+
+
+  	</div>
+
+  	<nav class="nav-main box">
+
+  		<a href="index.html" class="nav-main-item box-item-nav">About us</a>
+  		<!-- <a href="#style" class="nav-main-item  box-item-nav">Style</a> -->
+  		<a href="products.html" class="nav-main-item box-item-nav">Shop</a>
+
+  		<!-- <a href="cart.html" class="nav-main-item  box-item-nav">Cart</a> -->
+			<a href="check.html" class="nav-main-item  box-item-nav">Checkout</a>
+
+  	</nav>
+
+
+
+  <section id="shop">
+      <h1>Cart</h1>
+
+			<div class="gamecart">
+
+
+    <div class="box">
+
+
+  <h2>Your games</h2>
+
+
+<!-- <div class="gamecart"> -->
+
+
+      <div class="box-item-text">
+
+
+          <a style="text-decoration: none" href="https://www.cyberpunk.net">
+          <img src="img/cyberpunk2077.svg" alt="Cyberpunk2077" style="width:235px;height:120px;" >
+          </a>
+          <h4>The Lunar Boot</h4>
+
+            <h5>Quantity: 1</h5>
+
+            <h5>Price: $79.99</h5>
+
+          <p><a href="#">modify</a> or <a href="#">remove</a></p>
+
+        </div>
+
+
+            <div class="box-item-text">
+              <div class="img-link">
+
+
+            <a style="text-decoration: none" href="https://thewitcher.com/en">
+            <img  src="img/witcher.png" alt="The witcher" style="width:235px;height:120px;" >
+            </a>
+						<h4>The witcher 3</h4>
+
+	            <h5>Quantity: 1</h5>
+
+	            <h5>Price: $129.99</h5>
+            <p><a href="#">modify</a> or <a href="#">remove</a></p>  </div>
+
+        </div>
+
+
+
+          <div class="box-item-text">
+          <div class="img-link">
+            <a style="text-decoration: none" href="https://www.cyberpunk.net">
+            <img src="img/gwentlogo.png" alt="GWENT" style="width:250px;height:160px;" >
+            </a>
+						<h4>GWENT</h4>
+
+	            <h5>Quantity: 1</h5>
+
+	            <h5>Price: Free</h5>
+            <p><a href="#">modify</a> or <a href="#">remove</a></p>
+          </div>
+          </div>
+    </div>
+<hr>
+
+          <div class="box">
+            <div class="box-item-text">
+              <h2>Summary: 3 Items</h2>
+
+                    <h3>Subtotal: $190</h3>
+                    <h3>Tax: $11.9</h3>
+                    <h3>Shipping: Free</h3>
+
+                  <h4>Estimated Total: $191.9</h4>
+                  <button name="checkout" class="submit-button">Checkout</button>
+                  <button name="back" class="reset-button" onclick="window.location.href='cart.html'">Back to Cart</button>
+
+            </div>
+
+
+
+</div>
+
+          </div>
+
+
+  </section>
+
+  <hr>
+  <section>
+
+
+		<div class="box">
+			<div class="box-item-text">
+				<h3>code</h3>
+				<code>
+					&lt;section id=&quot;shop&quot;&gt;
+					&lt;h2&gt;Shop&lt;/h2&gt;
+
+
+
+
+
+
+					&lt;h3&gt;Choose your game&lt;/h3&gt;<br>
+					&lt;form action=&quot;action_page.php&quot;&gt;<br>
+					&lt;div class=&quot;box&quot;&gt;<br>
+
+
+					&lt;div class=&quot;box-item-text&quot;&gt;<br>
+					&lt;div class=&quot;img-link&quot;&gt;<br>
+
+
+					&lt;a style=&quot;text-decoration: none&quot; href=&quot;https://www.cyberpunk.net&quot;&gt;
+					<br>&lt;img src=&quot;img\2077.png&quot; alt=&quot;Cyberpunk2077&quot; style=&quot;width:19em;height:auto;&quot; &gt;
+					<br>&lt;nav class=&quot;nav-main box&quot;&gt;
+					<br> &lt;a href=&quot;#&quot; class=&quot;nav-main-item box-item-nav&quot;&gt;View Full Details&lt;/a&gt;
+					<br> &lt;/nav&gt;
+					<br> &lt;/a&gt;<br>
+					&lt;/div&gt;<br>
+					&lt;h3&gt;Cyberpunk2077&lt;/h3&gt;<br>
+					&lt;p&gt;Cyberpunk game&lt;/p&gt;<br>
+					&lt;h4&gt;$79.99&lt;/h4&gt;
+					<br>
+
+					&lt;/div&gt;<br>
+
+
+					&lt;div class=&quot;box-item-text&quot;&gt;<br>
+					&lt;div class=&quot;img-link&quot;&gt;<br>
+					<br> &lt;a style=&quot;text-decoration: none&quot; href=&quot;https://thewitcher.com/en&quot;&gt;
+					<br> &lt;img src=&quot;img\wc.png&quot; alt=&quot;thewitcher&quot; style=&quot;width:19em;height:auto;&quot; &gt;
+					<br>&lt;nav class=&quot;nav-main box&quot;&gt;
+					<br> &lt;a href=&quot;#&quot; class=&quot;nav-main-item box-item-nav&quot;&gt;View Full Details&lt;/a&gt;
+					<br>&lt;/nav&gt;
+					<br> &lt;/a&gt;
+
+					<br>&lt;/div&gt;
+					<br> &lt;h3&gt;The witcher&lt;/h3&gt;
+					<br> &lt;p&gt;A epic porlish RPG game&lt;/p&gt;
+					<br>&lt;h4&gt;$129.99&lt;/h4&gt;
+
+					<br>&lt;/div&gt;
+
+
+					<br> &lt;div class=&quot;box-item-text&quot;&gt;
+					<br> &lt;div class=&quot;img-link&quot;&gt;
+					<br> &lt;a style=&quot;text-decoration: none&quot; href=&quot;https://thewitcher.com/en&quot;&gt;
+					<br> &lt;img src=&quot;img/gt.png&quot; alt=&quot;The witcher&quot; style=&quot;width:19em;height:auto;&quot; &gt;
+					<br>&lt;nav class=&quot;nav-main box&quot;&gt;
+					<br> &lt;a href=&quot;#&quot; class=&quot;nav-main-item box-item-nav&quot;&gt;View Full Details&lt;/a&gt;
+					<br>&lt;/nav&gt;
+					<br> &lt;/a&gt;
+					<br> &lt;h3&gt;GWENT&lt;/h3&gt;
+					<br> &lt;p&gt;Card game in The witcher3 gmae&lt;/p&gt;
+					<br> &lt;h4&gt;Free*&lt;/h4&gt;
+
+					<br> &lt;/div&gt;
+
+					<br> &lt;/div&gt;
+					<br>&lt;/div&gt;
+
+					<br> &lt;/div&gt;
+
+					<br>&lt;/form&gt;
+
+
+					<br>&lt;/section&gt;
+
+				</code>
+
+
+			</div>
+
+			<div class="box-item-text">
+				<h3>Citations</h3>
+				<h4>Image</h4>
+				<p>CD projecket Red. (n.d.). The logo of Cyberpunk2077. Retrieved from https://us.store.cdprojektred.com/</p>
+				<p>CD projecket Red. (n.d.). The logo of The Witcher 3. Retrieved from https://us.store.cdprojektred.com/</p>
+				<p>CD projecket Red. (n.d.). The logo of The Gwent. Retrieved from https://us.store.cdprojektred.com/</p>
+
+			</div>
+
+		</div>
+	</section>
+
+
+
+
+</body>

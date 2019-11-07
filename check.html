@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>P01 Style Guide</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+
+</head>
+
+<body>
+
+  <div class="toplogo">
+
+    <div class="box">
+
+      <div class="box-item-image">
+        <img src="img/logo.jpg" alt="CD PROJEKT RED">
+      </div>
+
+      <div class="box-item-text">
+        <h1>CD projeckt RED</h1>
+        <h2>Style Guide </h2>
+        <br>
+      </div>
+    </div>
+
+
+  </div>
+
+  <nav class="nav-main box">
+
+    <a href="index.html" class="nav-main-item box-item-nav">About us</a>
+    <!-- <a href="#style" class="nav-main-item  box-item-nav">Style</a> -->
+    <a href="#shop" class="nav-main-item box-item-nav">Shop</a>
+    <!-- <a href="#contact" class="nav-main-item  box-item-nav">Contact</a> -->
+    <a href="cart.html" class="nav-main-item  box-item-nav">Cart</a>
+
+  </nav>
+
+
+  <section id="Checkout">
+    <h2>Checkout</h2>
+    <h3>Payment Information</h3>
+
+    <div class="box">
+
+      <div class="box-item-text">
+
+
+        <h4>Secure Payment</h4>
+        <form action="#" method="post">
+          <label>Card Type</label>
+          <br />
+          <input type="radio" name="card_type" value="visa" id="visa" /> Visa
+          <br />
+          <input type="radio" name="card_type" value="mastercard" id="mastercard" /> Mastercard
+          <br />
+          <label for="card_name">Name on Card</label>
+          <br />
+          <input type="text" name="card_name" id="card_name" placeholder="Your Name" />
+          <br />
+          <label for="card_number">Card Number</label>
+          <br />
+          <input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16" />
+          <br />
+          <label for="expiry">Expiry Date (MM/YY)</label><br />
+          <input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5" /><br />
+
+          <label for="security_code">Security Code</label><br />
+          <input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5" /><br />
+
+          <label for="phone_number">Phone Number</label><br />
+          <input type="text" name="phone_number" id="phone_number" placeholder="1234567890" /><br />
+        </form>
+      </div>
+
+
+      <div class="box-item-text">
+        <h4>Billing Address</h4>
+        <form action="#" method="post">
+          <input type="checkbox" name="billing_address" id="billing_address" /> Use my shipping address
+
+          <p>Your Name<br /> 1234 Avenue<br /> City, Province<br /> A1B 2C3</p>
+
+          <label for="first_name">First Name</label>
+          <br />
+          <input type="text" name="first_name" id="first_name" placeholder="First Name" />
+          <br />
+          <label for="last_name">Last Name</label>
+          <br />
+          <input type="text" name="last_name" id="last_name" placeholder="Last Name" />
+          <br />
+          <label for="street_number">Street Number</label>
+          <br />
+          <input type="text" name="street_number" id="street_number" placeholder="1234 Avenue" />
+          <br />
+          <label for="country">Country</label>
+          <br />
+          <input type="text" name="country" id="country" placeholder="Country" />
+          <br />
+          <label for="province">Province</label>
+          <br />
+          <input type="text" name="province" id="province" placeholder="Province" />
+          <br />
+          <label for="postal_code">Postal Code</label>
+          <br />
+          <input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6" />
+        </form>
+      </div>
+<div class="Checkoutco">
+
+
+      <div class="box-item-text">
+
+        <h2>Summary: 4 Items</h2>
+
+          <h3>Subtotal: &#36;1,500</h3>
+          <h3>Tax: &#36;187.5</h3>
+          <h3>Shipping: Free</h3>
+
+        <h4>Estimated Total: &#36;1,687.5</h4>
+        <button name="checkout" class="submit-button">Checkout</button>
+        <button name="back" class="reset-button" onclick="window.location.href='cart.html'">Back to Cart</button> <!-- reference for button link from http://www.hyperlinkcode.com/button-links.php -->
+      </div>
+      </div>
+    </div>
+  </section> <!-- //END PAYMENT SECTION -->
+
+  <!-- CODE -->
+  <section>
+    <h2>Code</h2>
+  <code>&lt;section id="page_template"&gt;
+  <br>&lt;h2&gt;Checkout&lt;/h2&gt;
+  <br>&lt;h3&gt;Payment Information&lt;/h3&gt;
+
+<br>  &lt;div class="payment-container"&gt;
+
+  <br>  &lt;section class="payment-form"&gt;
+  <br>    &lt;h4&gt;Secure Payment&lt;/h4&gt;
+  <br>      &lt;form action="#" method="post"&gt;
+      <br>  &lt;label&gt;Card Type&lt;/label&gt;
+        <br>&lt;input type="radio" name="card_type" value="visa" id="visa"/&gt; Visa
+        <br>&lt;input type="radio" name="card_type" value="mastercard" id="mastercard"/&gt; Mastercard
+
+      <br>  &lt;label for="card_name"&gt;Name on Card&lt;/label&gt;
+    <br>    &lt;input type="text" name="card_name" id="card_name" placeholder="Your Name"/&gt;
+
+    <br>    &lt;label for="card_number"&gt;Card Number&lt;/label&gt;
+    <br>    &lt;input type="text" name="card_number" id="card_number" placeholder="xxxxxxxxxxxx" maxlength="16"/&gt;
+
+      <br>  &lt;label for="expiry"&gt;Expiry Date (MM/YY)&lt;/label&gt;
+    <br>    &lt;input type="text" name="expiry" id="expiry" placeholder="MM/YY" maxlength="5"/&gt;
+
+    <br>    &lt;label for="security_code"&gt;Security Code&lt;/label&gt;
+  <br>      &lt;input type="text" name="security_code" id="security_code" placeholder="xxx" maxlength="5"/&gt;
+
+  <br>      &lt;label for="phone_number"&gt;Phone Number&lt;/label&gt;
+  <br>      &lt;input type="text" name="phone_number" id="phone_number" placeholder="1234567890"/&gt;
+  <br>    &lt;/form&gt;
+  <br>  &lt;/section&gt;
+
+<br>    &lt;section class="payment-form"&gt;
+  <br>  &lt;h4&gt;Billing Address&lt;/h4&gt;
+  <br>    &lt;form action="#" method="post"&gt;
+      <br>  &lt;input type="checkbox" name="billing_address" id="billing_address"/&gt; Use my shipping address
+
+    <br>    &lt;p&gt;Your Name&lt;br /&gt; 1234 Avenue&lt;br /&gt; City, Province&lt;br /&gt; A1B 2C3&lt;/p&gt;
+
+    <br>    &lt;label for="first_name"&gt;First Name&lt;/label&gt;
+    <br>    &lt;input type="text" name="first_name" id="first_name" placeholder="First Name"/&gt;
+
+    <br>    &lt;label for="last_name"&gt;Last Name&lt;/label&gt;
+    <br>    &lt;input type="text" name="last_name" id="last_name" placeholder="Last Name"/&gt;
+
+    <br>    &lt;label for="street_number"&gt;Street Number&lt;/label&gt;
+      <br>  &lt;input type="text" name="street_number" id="street_number" placeholder="1234 Avenue"/&gt;
+
+      <br>  &lt;label for="country"&gt;Country&lt;/label&gt;
+      <br>  &lt;input type="text" name="country" id="country" placeholder="Country"/&gt;
+
+      <br>  &lt;label for="province"&gt;Province&lt;/label&gt;
+      <br>  &lt;input type="text" name="province" id="province" placeholder="Province"/&gt;
+
+      <br>  &lt;label for="postal_code"&gt;Postal Code&lt;/label&gt;
+      <br>  &lt;input type="text" name="postal_code" id="postal_code" placeholder="A1B2C3" maxlength="6"/&gt;
+  <br>    &lt;/form&gt;
+  <br>  &lt;/section&gt;
+
+  <br>  &lt;section class="cart-total"&gt;
+    <br>  &lt;h2&gt;Summary: 4 Items&lt;/h2&gt;
+  <br>    &lt;ol id="total"&gt;
+    <br>    &lt;li&gt;Subtotal: &#36;1,500&lt;/li&gt;
+    <br>    &lt;li&gt;Tax: &#36;187.5&lt;/li&gt;
+    <br>    &lt;li&gt;Shipping: Free&lt;/li&gt;
+    <br>  &lt;/ol&gt;
+    <br>  &lt;p&gt;Estimated Total: &#36;1,687.5&lt;/p&gt;
+  <br>    &lt;button name="checkout" class="submit-button"&gt;Checkout&lt;/button&gt;
+  <br>    &lt;button name="back" class="reset-button" onclick="window.location.href='cart.html'"&gt;Back to Cart&lt;/button&gt;
+  <br>  &lt;/section&gt;
+<br>  &lt;/div&gt;
+&lt;/section&gt;</code>
+  </section> <!-- //payment section -->
+
+  <div class="box-item-text">
+    <h3>Citations</h3>
+    <h4>Image</h4>
+    <p>CD projecket Red. (n.d.). The shop link of Cyberpunk2077. Retrieved from https://us.store.cdprojektred.com/eng_m_Shop-Now_Game_CYBERPUNK-2077-178.html
+    <p>CD projecket Red. (n.d.). The shop link of The Witcher 3. Retrieved from https://us.store.cdprojektred.com/eng_m_Shop-Now_Game_THE-WITCHER-175.html</p>
+    <p>CD projecket Red. (n.d.). The shop link of The Gwent. Retrieved from https://us.store.cdprojektred.com/data/include/cms/bannery/bannery-worlds-mainpage-newGWENT.png</p>
+
+  </div>
+
+
+
+
+</body>
+
+
+
+</html>
