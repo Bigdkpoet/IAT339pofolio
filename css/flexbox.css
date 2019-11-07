@@ -90,6 +90,25 @@
 }
 
 
+.side {
+  flex: 30%;
+    flex-grow:0;
+    flex-shrink:0;
+  background-color: #f1f1f1;
+  padding: 20px;
+  flex-grow: 0;
+}
+
+/* Main column */
+.main {
+  flex:70%;
+
+
+  background-color: white;
+  padding: 20px;
+
+}
+
 
 /*
 	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is greater than 50.25em, we should apply the styling within the brackets.
