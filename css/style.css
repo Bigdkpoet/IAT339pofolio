@@ -16,16 +16,17 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 100px;
+  padding: 270px;
   text-align:left;
-  background: #0054a8;
+	background-image: linear-gradient(150deg, #0054a8 0%, #c2e9fb 100%);
+  /* background: #0054a8; */
   color: white;
 
 }
 
  .subheader {
 
-   padding: 20px;
+   padding:40px;
    text-align:left;
    background: #0054a8;
    color: white;
@@ -33,11 +34,18 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
+	background-color: rgba(0, 0, 0, 0.2);
+	position:sticky;
 
+	  width: 100%;
+		/* overflow: hidden; */
+	   padding: 1em;
 
-  padding-right: 50px;
-  display: flex;
-  background-color: #0054a8;
+  /* padding-right: 50px; */
+	position: fixed;
+  /* display: flex; */
+	/* background-image: linear-gradient(120deg, #0054a8 0%, #c2e9fb 100%);
+  /* background-color: #0054a8; */
 
 
   justify-content: flex-end;
@@ -46,7 +54,7 @@ body {
 /* Style the navigation bar links */
 .navbar a {
   color: white;
-  padding: 14px 20px;
+  padding: 20px 20px;
   text-decoration: none;
   text-align: center;
   transition: background-color 1s ease-out
@@ -56,6 +64,7 @@ body {
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+	transition: background-color 1s ease-out
 }
 
 /* Column container */
@@ -75,7 +84,7 @@ body {
 .side {
   flex: 30%;
 
-  background-color: #f1f1f1;
+  background-color: #45a176;
   padding: 20px;
   flex-grow: 0;
 }
@@ -105,15 +114,17 @@ body {
 }
 
 .headerbox {
+
+	  border-left: 5px solid #e91e63;
   flex: 100%;
   background-color: white;
   padding: 5px;
-  border: 1px solid rgba(0, 150, 136, 0.51);
+  /* border: 1px solid rgba(0, 150, 136, 0.51); */
 }
 
 .itembox{
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 	flex: 50%;
   background-color: white;
@@ -121,17 +132,31 @@ body {
 
 
 }
+.imgholder img{
+	max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+}
+
+.fullside img{
+	max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+}
 
 
 /* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+.imgholder {
+
+
+        margin: auto;
 }
 
 /* Footer */
 .footer {
+	font-size:2px;
   padding: 20px;
   text-align: center;
   background: #0054a8;
@@ -142,13 +167,24 @@ body {
   .row, .navbar {
     flex-direction: column;
   }
+
+	.header {
+	  padding-left: 20px;
+		padding-right: 20px;
+
+
+	}
+
+
+
 }
 
 
 hr{
 border:0;
 background-color:#2d80b9;
-
+margin-left: 2em;
+ margin-right: 2em;
 height:1px;
 }
 
@@ -164,6 +200,7 @@ h2 {
 }
 
 h3 {
+	font-style: italic;
 	font-size: 1.2rem;
 	margin-bottom: 0;
 
@@ -178,4 +215,41 @@ h4{
 p{
   font-size: 0.8rem;
 
+}
+
+a {
+  color: red;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+a:hover {
+  background-color: #ddd;
+  color: darkred;
+	transition: background-color 1s ease-out
+}
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.myButton:hover {
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
