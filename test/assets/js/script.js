@@ -1,0 +1,1 @@
+// Source: https://theoutline.com/post/5970/unconventional-wisdom-emotional-readiness-is-bullshit
